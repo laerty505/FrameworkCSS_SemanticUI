@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="centralizar-titulo">
+        <h1>Login</h1>
+    </div>
+    <div class="centralizar">
+        <form action="">
+            <fieldset style="width: fit-content;">
+                <legend>Login</legend>
+                <p>
+                    <label for="idNomeLogin">Usuário:</label>
+                    <input type="text" name="usuario" placeholder="Digite seu usuário..." id="idNomeLogin"
+                        required><br><br>
+                </p>
+
+                <p>
+                    <label for="idSenhaLogin">Senha:</label>
+                    <input type="password" name="senha" placeholder="Digite sua senha..." id="idSenhaLogin" required
+                        pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                        title="Deve conter pelo menos um número, uma letra maiúscula, uma letra minúscula e 8 caracteres."><br><br>
+                </p>
+
+                <a href="novo_usuario.html">Registrar</a><br><br>
+
+                <a href="recuper_senha.html">Recuperar Senha</a><br><br>
+
+                <input type="submit" value="Entrar">
+            </fieldset>
+        </form>
+    </div>
+</body>
+</html>
