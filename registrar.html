@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrar</title>
+</head>
+<body>
+    <form action="index.html">
+        </div>
+            <h1>Registrar-se</h1>
+            <fieldset style="width: fit-content;">
+                <legend>Registrar-se</legend>
+                <p>
+                    <label for="idNomeRegistro">Usuário:</label>
+                    <input type="text" name="usuario" id="idNomeRegistro" placeholder="Digite seu usuário.." required>
+                </p>
+
+                <p>
+                    <label for="idEmailRegistro">E-mail:</label>
+                    <input type="email" name="email" id="idEmailRegistro" placeholder="Digite seu e-mail..." required>
+                </p>
+
+                <p>
+                    <label for="">Sexo:</label>
+                    <input type="radio" name="sexo" id="idMasc"><label for="idMasc">Masculino</label>
+                    <input type="radio" name="sexo" id="idFem"><label for="idFem">Feminino</label>
+                    <input type="radio" name="sexo" id="idOutro"><label for="idOutro">Outro</label>
+                </p>
+
+                <p>
+                    <label for="idSenhaRegistro">Senha:</label>
+                    <input type="password" name="senha" id="idSenhaRegistro" placeholder="Digite sua senha..." required
+                        pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                        title="Deve conter pelo menos um número, uma letra maiúscula, uma letra minúscula e 8 caracteres."><br><br>
+                    <label for="idConfirmarSenha">Confirmar senha:</label>
+                    <input type="password" name="senha" id="idConfirmarSenha"
+                        placeholder="Digite novamente sua senha..." required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                        title="Deve conter pelo menos um número, uma letra maiúscula, uma letra minúscula e 8 caracteres.">
+                </p>
+
+                <p>
+                    <textarea name="obs" id="idObservacoes" cols="30" rows="5" placeholder="Obs..."></textarea>
+                </p>
+
+                <p>
+                    <input type="submit" value="Registrar-se">
+                    <input type="reset" value="Limpar">
+                </p>
+            </fieldset>
+        <div>
+    </form>
+</body>
+</html>
