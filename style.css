@@ -1,17 +1,14 @@
 .centralizar {
 
-  width: 360px;
-  margin-left: 530px;
-  margin-right: 530px;
-  
+  display: flex; 
+  justify-content: center; 
+   align-items: center;
 
 }
 
 .centralizar-titulo {
 
-  width: 360px;
-  margin-left: 620px;
-  margin-right: 620px;
+  text-align: center;
   
 
 }
