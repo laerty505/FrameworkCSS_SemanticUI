@@ -1,51 +1,11 @@
 .centralizar {
-
   display: flex; 
   justify-content: center; 
    align-items: center;
-
 }
 
 .centralizar-titulo {
-
   text-align: center; 
-
-  
-
-}
-
-.cabecalho {
-
-    
-    
-    grid-template-columns: 1fr auto;
-
-    display: grid;
-
-    justify-content: space-between;
-
-    align-items: center;
-
-    padding: 10px 20px;
-
-    box-sizing: border-box;
-
-
-}
-
-.cabecalho {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 100;
-
-  display: grid;
-  grid-template-columns: 1fr auto;
-  align-items: center;
-  padding: 10px 20px;
-  box-sizing: border-box;
-  
 }
 
 .catalogo-grid {
@@ -68,8 +28,66 @@
 
 .card-produto .img-produto {
   width: 100%;
-  max-width: 220px;
+  max-width: 200px;
   height: 200px;
   object-fit: cover;
   border-radius: 8px;
+}
+
+/* aqui é o css dos botões de carrinho em baixo das placas  */
+.botoes {
+  background-color: #21ba45;
+  border: none;
+  border-radius: 8px;
+  padding: 10px;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 150px;
+}
+
+.botoes img {
+  width: 24px;
+  height: auto;
+}
+
+.botoes:hover {
+  background-color: #16ab39;
+}
+ 
+
+/* AJUSTES DA BARRA PRINCIPAL PRETA */
+div.ui.inverted.menu.barra-principal {
+  border-radius: 0;
+  margin-bottom: 0;
+  padding: 15px 5%;
+  margin: 0;
+}
+
+/* TAMANHO DA LOGO */
+#logo-img {
+  width: 110px;
+}
+
+/* ESTICA A BARRA DE PESQUISA PARA PREENCHER O MEIO */
+.barra-pesquisa {
+  flex-grow: 1;
+  width: 65%;
+  margin: 0 30px;
+}
+
+/* AJUSTES DA BARRA DE CATEGORIAS VERMELHA */
+div.ui.red.inverted.menu.barra-categorias {
+  border-radius: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 0 5%;
+  border: none;
+}
+
+/* aqui é pra organizar os body */
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
 }

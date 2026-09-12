@@ -5,35 +5,66 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>LOJA</title>
+  
+  <!-- IMPORTANDO O CSS DO SEMANTIC UI -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.5.0/semantic.min.css">
   <link rel="stylesheet" href="style.css">
+  
   <style>
-
     body {
       font-family: "Elms Sans", sans-serif;
       font-optical-sizing: auto;
-      font-weight: weight;
       font-style: normal;
-      padding-top: 50px;
     }
   </style>
 </head>
 
 <body class="telaLogin">
-  <header class="cabecalho">
+  
+<!-- 1. BARRA PRINCIPAL  -->
+<div class="ui inverted menu barra-principal">
+  
+  <!-- LOGO -->
+  <a class="header item" href="tela_principal.html">
+    <img src="imagens/logo.png" alt="Logo" id="logo-img">
+  </a>
 
-    <div>
-      <a href="tela_principal.html">
-        <img src="imagens/logo.png" alt="Logo" width="100">
+  <!-- BARRA DE PESQUISA -->
+  <div class="item barra-pesquisa">
+    <div class="ui fluid action input">
+      <input type="text" placeholder="O que você está procurando? Digite aqui...">
+      <button class="ui red icon button">
+        <i class="search icon"></i>
+      </button>
+    </div>
+  </div>
+
+  <!-- ÍCONES DA DIREITA -->
+  <div class="right menu">
+    <a class="item" href="#">
+      <i class="user icon"></i> Minha Conta
+    </a>
+    <a class="item" href="#">
+      <i class="heart icon"></i> Favoritos
+    </a>
+    <div class="item">
+      <a class="ui green button" href="checkout.html">
+        <i class="shopping cart icon"></i> CARRINHO
       </a>
     </div>
+  </div>
+</div>
 
-    <div>
-      <a href="index.html" style="margin-right: 15px;" class="ancoras-sair-sobre">Sair</a>
-      <a href="checkout.html">
-        <img src="imagens/carrinho.png" alt="Carrinho" width="80">
-      </a>
-    </div>
-  </header>
+<!-- 2. BARRA DE CATEGORIAS (FUNDO VERMELHO) -->
+<div class="ui red inverted menu barra-categorias">
+  <a class="item">
+    <i class="bars icon"></i> DEPARTAMENTOS
+  </a>
+  <a class="item">MONTE SEU PC</a>
+  <a class="item">PCS GAMERS</a>
+  <a class="item">PROMOÇÃO</a>
+  <a class="item">OPENBOX</a>
+</div>
 
   <main class="catalogo-grid">
 
@@ -53,7 +84,7 @@
         <img class="img-produto" src="imagens/rtx4060.jpg" alt="RTX 4060">
       </a>
       <button onclick="alert('Produto adicionado ao carrinho!')" class="botoes">
-        <img src="imagens/carrinho.png" alt="" width="30">
+        <img " src="imagens/carrinho.png" alt="" width="30">
       </button>
     </div>
 
@@ -97,12 +128,6 @@
       </button>
     </div>
 
-    
-
   </main>
-
- 
-
 </body>
-
 </html>
