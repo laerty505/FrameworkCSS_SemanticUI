@@ -6,11 +6,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>LOJA</title>
   
-  <!-- IMPORTANDO O CSS DO SEMANTIC UI -->
+  <!-- arquivo do framework Semantic UI -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.5.0/semantic.min.css">
   <link rel="stylesheet" href="style.css">
   
   <style>
+    /* aqui define a regra de fonte global do corpo do site */
     body {
       font-family: "Elms Sans", sans-serif;
       font-optical-sizing: auto;
@@ -21,15 +22,15 @@
 
 <body class="telaLogin">
   
-<!-- 1. BARRA PRINCIPAL  -->
+<!-- aqui é o container da barra de navegação principal preta -->
 <div class="ui inverted menu barra-principal">
   
-  <!-- LOGO -->
+  <!-- aqui é o link da logo que redireciona para a tela principal -->
   <a class="header item" href="tela_principal.html">
     <img src="imagens/logo.png" alt="Logo" id="logo-img">
   </a>
 
-  <!-- BARRA DE PESQUISA -->
+  <!-- aqui é o container do campo de busca e botão de pesquisa -->
   <div class="item barra-pesquisa">
     <div class="ui fluid action input">
       <input type="text" placeholder="O que você está procurando? Digite aqui...">
@@ -39,7 +40,7 @@
     </div>
   </div>
 
-  <!-- ÍCONES DA DIREITA -->
+  <!-- aqui são os menus e botões localizados no lado direito superior -->
   <div class="right menu">
     <a class="item" href="#">
       <i class="user icon"></i> Minha Conta
@@ -55,7 +56,7 @@
   </div>
 </div>
 
-<!-- 2. BARRA DE CATEGORIAS (FUNDO VERMELHO) -->
+<!-- aqui é a barra secundária vermelha com as categorias do site -->
 <div class="ui red inverted menu barra-categorias">
   <a class="item">
     <i class="bars icon"></i> DEPARTAMENTOS
@@ -66,68 +67,111 @@
   <a class="item">OPENBOX</a>
 </div>
 
-  <main class="catalogo-grid">
+  <!-- aqui é o container principal que usa as classes nativas do Semantic UI para exibir 3 cards por linha no PC e empilhar automaticamente no celular -->
+  <main class="ui three stackable cards catalogo-grid">
 
-    <div class="card-produto">
-      <p class="nome-produto">RTX 3050</p>
+  <!-- aqui é o card do produto RTX 3050 -->
+  <div class="ui raised card">
+    <div class="image">
       <a href="detalhes_3050.html">
-        <img class="img-produto" src="imagens/rtx3050.jpg" alt="RTX 3050">
+        <img src="imagens/rtx3050.jpg" alt="RTX 3050">
       </a>
-      <button onclick="alert('Produto adicionado ao carrinho!')" class="botoes">
-        <img src="imagens/carrinho.png" alt="" width="30">
+    </div>
+    <div class="content">
+      <span class="header">RTX 3050</span>
+    </div>
+    <div class="extra content">
+      <button onclick="alert('Produto adicionado ao carrinho!')" class="ui green button">
+        <i class="shopping cart icon"></i> ADICIONAR
       </button>
     </div>
+  </div>
 
-    <div class="card-produto">
-      <p class="nome-produto">RTX 4060</p>
+  <!-- aqui é o card do produto RTX 4060 -->
+  <div class="ui raised card">
+    <div class="image">
       <a href="detalhes_4060.html">
-        <img class="img-produto" src="imagens/rtx4060.jpg" alt="RTX 4060">
+        <img src="imagens/rtx4060.jpg" alt="RTX 4060">
       </a>
-      <button onclick="alert('Produto adicionado ao carrinho!')" class="botoes">
-        <img " src="imagens/carrinho.png" alt="" width="30">
+    </div>
+    <div class="content">
+      <span class="header">RTX 4060</span>
+    </div>
+    <div class="extra content">
+      <button onclick="alert('Produto adicionado ao carrinho!')" class="ui green button">
+        <i class="shopping cart icon"></i> ADICIONAR
       </button>
     </div>
+  </div>
 
-    <div class="card-produto">
-      <p class="nome-produto">RTX 5060</p>
+  <!-- aqui é o card do produto RTX 5060 -->
+  <div class="ui raised card">
+    <div class="image">
       <a href="detalhes_5060.html">
-        <img class="img-produto" src="imagens/rtx5060.jpg" alt="RTX 5060">
+        <img src="imagens/rtx5060.jpg" alt="RTX 5060">
       </a>
-      <button onclick="alert('Produto adicionado ao carrinho!')" class="botoes">
-        <img src="imagens/carrinho.png" alt="" width="30">
+    </div>
+    <div class="content">
+      <span class="header">RTX 5060</span>
+    </div>
+    <div class="extra content">
+      <button onclick="alert('Produto adicionado ao carrinho!')" class="ui green button">
+        <i class="shopping cart icon"></i> ADICIONAR
       </button>
     </div>
+  </div>
 
-    <div class="card-produto">
-      <p class="nome-produto">RX 6800</p>
+  <!-- aqui é o card do produto RX 6800 -->
+  <div class="ui raised card">
+    <div class="image">
       <a href="detalhes_rx6800.html">
-        <img class="img-produto" src="imagens/rx6800.jpg" alt="RX 6800">
+        <img src="imagens/rx6800.jpg" alt="RX 6800">
       </a>
-      <button onclick="alert('Produto adicionado ao carrinho!')" class="botoes">
-        <img src="imagens/carrinho.png" alt="" width="30">
+    </div>
+    <div class="content">
+      <span class="header">RX 6800</span>
+    </div>
+    <div class="extra content">
+      <button onclick="alert('Produto adicionado ao carrinho!')" class="ui green button">
+        <i class="shopping cart icon"></i> ADICIONAR
       </button>
     </div>
+  </div>
 
-    <div class="card-produto">
-      <p class="nome-produto">RX 7600</p>
+  <!-- aqui é o card do produto RX 7600 -->
+  <div class="ui raised card">
+    <div class="image">
       <a href="detalhes_rx7600.html">
-        <img class="img-produto" src="imagens/rx7600.jpg" alt="RX 7600">
+        <img src="imagens/rx7600.jpg" alt="RX 7600">
       </a>
-      <button onclick="alert('Produto adicionado ao carrinho!')" class="botoes">
-        <img src="imagens/carrinho.png" alt="" width="30">
+    </div>
+    <div class="content">
+      <span class="header">RX 7600</span>
+    </div>
+    <div class="extra content">
+      <button onclick="alert('Produto adicionado ao carrinho!')" class="ui green button">
+        <i class="shopping cart icon"></i> ADICIONAR
       </button>
     </div>
+  </div>
 
-    <div class="card-produto">
-      <p class="nome-produto">RX 9060 XT</p>
+  <!-- aqui é o card do produto RX 9060 XT -->
+  <div class="ui raised card">
+    <div class="image">
       <a href="detalhes_rx9060.html">
-        <img class="img-produto" src="imagens/rx9060.jpg" alt="RX 9060 XT">
+        <img src="imagens/rx9060.jpg" alt="RX 9060 XT">
       </a>
-      <button onclick="alert('Produto adicionado ao carrinho!')" class="botoes">
-        <img src="imagens/carrinho.png" alt="" width="30">
+    </div>
+    <div class="content">
+      <span class="header">RX 9060 XT</span>
+    </div>
+    <div class="extra content">
+      <button onclick="alert('Produto adicionado ao carrinho!')" class="ui green button">
+        <i class="shopping cart icon"></i> ADICIONAR
       </button>
     </div>
+  </div>
 
-  </main>
+</main>
 </body>
 </html>
