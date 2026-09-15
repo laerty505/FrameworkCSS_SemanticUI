@@ -26,7 +26,6 @@ div.ui.inverted.menu.barra-principal {
   border: none;
   box-shadow: none;
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
 }
@@ -53,13 +52,9 @@ div.ui.red.inverted.menu.barra-categorias {
   border: none;
   box-shadow: none;
   overflow-x: auto;
-  white-space: nowrap;
 }
 
-/*esconde a barra de rolagem da barra de categorias */
-div.ui.red.inverted.menu.barra-categorias::-webkit-scrollbar {
-  display: none;
-}
+
 
 /*centraliza os textos e os conteúdos internos dos cards */
 .ui.raised.card .content,
